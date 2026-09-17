@@ -1,4 +1,8 @@
-# Roadmap, backlog y decisiones pendientes
+# Roadmap, prioridades y decisiones pendientes
+
+El estado ejecutable vive en [GitHub Issues](https://github.com/Monkno/pushpoint/issues).
+Este documento conserva la intención de producto, las fases y los criterios de
+priorización; no refleja avance, asignaciones ni bloqueos actuales.
 
 ## 1. Estrategia de entrega
 
@@ -83,7 +87,7 @@ Primeros 30 días.
 - Ajustar copy y campos.
 - Decidir agenda, CRM, panel interno, inglés o contenidos según evidencia.
 
-## 3. Backlog priorizado
+## 3. Prioridades de producto
 
 ### P0 — Necesario para lanzar
 
