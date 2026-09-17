@@ -4,12 +4,18 @@ Este repositorio contiene la documentación funcional y técnica para el sitio w
 
 ## Documentos para revisión
 
-1. [Brief de producto](docs/01-product-brief.md)
-2. [PRD 01 — Sitio público](docs/prd-01-sitio-publico.md)
-3. [PRD 02 — Solicitud de servicios](docs/prd-02-solicitud-servicios.md)
-4. [PRD 03 — Gestión interna de oportunidades](docs/prd-03-gestion-oportunidades.md)
-5. [Plan técnico](docs/05-plan-tecnico.md)
-6. [Roadmap, backlog y decisiones pendientes](docs/06-roadmap-y-backlog.md)
+1. [Brief de producto](docs/product/PRODUCT_BRIEF.md)
+2. [Suite de PRD](docs/prd/README.md)
+3. [PRD 01 — Sitio público](docs/prd/PRD_MODULO_01_SITIO_PUBLICO.md)
+4. [PRD 02 — Solicitud de servicios](docs/prd/PRD_MODULO_02_SOLICITUD_SERVICIOS.md)
+5. [PRD 03 — Gestión interna de oportunidades](docs/prd/PRD_MODULO_03_GESTION_OPORTUNIDADES.md)
+6. [Plan técnico](docs/architecture/PLAN_TECNICO.md)
+7. [Roadmap y prioridades](docs/delivery/ROADMAP_Y_BACKLOG.md)
+8. [Decisiones de arquitectura](docs/adr/README.md)
+
+El backlog operativo vive en [GitHub Issues](https://github.com/Monkno/pushpoint/issues). Los
+documentos del repositorio definen producto y decisiones durables; no duplican el estado
+de ejecución.
 
 ## Alcance recomendado para el primer lanzamiento
 
