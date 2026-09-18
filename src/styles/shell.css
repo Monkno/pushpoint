@@ -1,0 +1,209 @@
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: var(--space-3);
+  left: var(--space-3);
+  translate: 0 -200%;
+  border-radius: var(--radius-sm);
+  background: var(--color-ink);
+  color: var(--color-navy-950);
+  padding: 0.7rem 1rem;
+  font-weight: 800;
+  transition: translate var(--transition-fast);
+}
+
+.skip-link:focus {
+  translate: 0;
+}
+
+.site-header {
+  position: relative;
+  z-index: 20;
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-navy-950);
+}
+
+.site-header__inner {
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72rem;
+  min-height: 2.75rem;
+  font-weight: 830;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav__link,
+.footer-link {
+  border-radius: var(--radius-sm);
+  color: var(--color-muted);
+  font-size: var(--step--1);
+  font-weight: 680;
+  text-decoration: none;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.site-nav__link {
+  display: inline-flex;
+  padding: 0.62rem 0.72rem;
+}
+
+.site-nav__link:hover,
+.footer-link:hover {
+  color: var(--color-ink);
+}
+
+.site-nav__link:active,
+.footer-link:active,
+.brand:active {
+  color: var(--color-purple-300);
+}
+
+.site-nav__link:hover,
+.site-nav__link[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-ink);
+}
+
+.menu-toggle {
+  display: none;
+  min-height: 2.85rem;
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.55rem 0.75rem;
+}
+
+.menu-toggle__label {
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+
+.menu-toggle__icon span {
+  display: block;
+  width: 1rem;
+  height: 1px;
+  margin: 0.16rem auto;
+  background: currentColor;
+  transition:
+    rotate var(--transition-fast),
+    translate var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon span:first-child {
+  translate: 0 0.32rem;
+  rotate: 45deg;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle__icon span:last-child {
+  translate: 0 -0.32rem;
+  rotate: -45deg;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-line);
+  background: rgba(5, 8, 23, 0.75);
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding-block: var(--space-5);
+}
+
+.site-footer__brand {
+  margin-bottom: var(--space-1);
+  font-weight: 820;
+}
+
+.site-footer__summary {
+  max-width: 38rem;
+  margin-bottom: 0;
+  color: var(--color-muted);
+  font-size: var(--step--1);
+}
+
+.footer-link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+}
+
+@media (max-width: 68rem) {
+  .menu-toggle {
+    display: grid;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    border-bottom: 1px solid var(--color-line);
+    background: var(--color-navy-900);
+    padding: var(--space-3) max(1rem, calc((100vw - var(--container)) / 2));
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.24);
+  }
+
+  .site-nav[data-open="true"] {
+    display: grid;
+  }
+
+  .site-nav__list {
+    display: grid;
+  }
+
+  .site-nav__link,
+  .site-nav__cta {
+    width: 100%;
+  }
+
+  .site-nav__link {
+    min-height: 2.75rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 52rem) {
+  .site-footer__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

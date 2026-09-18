@@ -9,6 +9,25 @@ PushPoint se entrega mediante unidades pequeñas, revisables y trazables desde G
 3. Crear una rama breve que incluya su identificador, por ejemplo `m02-01-contacto`.
 4. No ampliar el alcance del issue sin actualizar primero el PRD correspondiente.
 
+## Desarrollo local
+
+Requisitos: Node.js 20.9 o posterior y npm.
+
+```bash
+npm ci
+npm run dev
+```
+
+Antes de solicitar revisión, ejecutar la misma verificación que usa CI:
+
+```bash
+npm run lint
+npm run typegen
+npm run typecheck
+npm test
+npm run build
+```
+
 ## Unidades de trabajo
 
 Una unidad debe caber en un pull request y poder verificarse de manera independiente.

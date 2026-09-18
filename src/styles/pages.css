@@ -1,0 +1,128 @@
+.foundation-hero {
+  display: grid;
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+  grid-template-columns: minmax(0, 1.3fr) minmax(17rem, 0.7fr);
+}
+
+.foundation-hero__copy {
+  max-width: 49rem;
+}
+
+.foundation-hero h1,
+.page-intro h1 {
+  margin-bottom: var(--space-4);
+  font-size: var(--step-4);
+  letter-spacing: -0.055em;
+}
+
+.foundation-hero__description,
+.page-intro__description {
+  max-width: 43rem;
+  margin-bottom: var(--space-5);
+  color: var(--color-muted);
+  font-size: var(--step-1);
+}
+
+.delivery-path__label {
+  margin-bottom: var(--space-3);
+  color: var(--color-purple-300);
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+
+.delivery-path ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery-path li {
+  display: grid;
+  grid-template-columns: 2.4rem 1fr;
+  gap: var(--space-3);
+  border-top: 1px solid var(--color-line-strong);
+  padding-block: var(--space-3);
+}
+
+.delivery-path li:last-child {
+  border-bottom: 1px solid var(--color-line-strong);
+}
+
+.delivery-path__index {
+  color: var(--color-purple-300);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+}
+
+.delivery-path h2 {
+  margin-bottom: var(--space-1);
+  font-size: var(--step-1);
+}
+
+.delivery-path li p {
+  margin-bottom: 0;
+  color: var(--color-muted);
+  font-size: var(--step--1);
+}
+
+.page-intro {
+  max-width: 58rem;
+}
+
+.contact-list {
+  display: grid;
+  max-width: 40rem;
+  border-top: 1px solid var(--color-line-strong);
+  font-style: normal;
+}
+
+.contact-list a {
+  display: grid;
+  min-height: 3.75rem;
+  align-items: center;
+  gap: var(--space-1) var(--space-4);
+  border-bottom: 1px solid var(--color-line-strong);
+  grid-template-columns: 7rem minmax(0, 1fr);
+  padding-block: var(--space-2);
+  text-decoration: none;
+}
+
+.contact-list a:hover strong {
+  color: var(--color-purple-300);
+}
+
+.contact-list span {
+  color: var(--color-muted);
+  font-size: var(--step--1);
+}
+
+.contact-list strong {
+  overflow-wrap: anywhere;
+  transition: color var(--transition-fast);
+}
+
+@media (max-width: 52rem) {
+  .foundation-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-path {
+    max-width: 34rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .button-row {
+    display: grid;
+  }
+
+  .button-row .button {
+    width: 100%;
+  }
+
+  .contact-list a {
+    grid-template-columns: 1fr;
+    padding-block: var(--space-3);
+  }
+}

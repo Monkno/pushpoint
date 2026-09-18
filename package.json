@@ -1,0 +1,38 @@
+{
+  "name": "pushpoint",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typegen": "next typegen",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --import ./test/setup-dom.ts --test src/components/site-header.test.tsx src/components/ui/button-link.test.tsx src/components/ui/text-field.test.tsx",
+    "test:watch": "node --import tsx --import ./test/setup-dom.ts --test --watch src/components/site-header.test.tsx src/components/ui/button-link.test.tsx src/components/ui/text-field.test.tsx"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@types/jsdom": "21.1.7",
+    "@types/node": "20.19.43",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.5",
+    "jsdom": "26.1.0",
+    "tsx": "4.23.13",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.0"
+  }
+}

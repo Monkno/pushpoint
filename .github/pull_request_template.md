@@ -1,6 +1,6 @@
 ## Unidad
 
-<!-- Ejemplo: Closes #12 — M02-01 · Solicitud breve de servicio -->
+<!-- Ejemplo: Closes #12: M02-01 · Solicitud breve de servicio -->
 
 ## Qué cambia
 
